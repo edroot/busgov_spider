@@ -1,8 +1,11 @@
 Bus.gov.ru Spider
 Перечень государственных (муниципальных) учреждений России
-
 Getting Started
 
+Prepare
+pip install -r requirements.txt
+
+Run
 python spider.py
 
 
