@@ -104,9 +104,10 @@ class Busgov(object):
 # Helper functions
 # =========================
 from requests.auth import HTTPDigestAuth, HTTPBasicAuth
-#auth = HTTPBasicAuth("user", "password")
 
 proxies = {"http": (choice(list(open('proxy.txt')))).strip('\n')}
+
+
 def get_request(page,proxies):
     try:
         headers = {
@@ -120,6 +121,7 @@ def get_request(page,proxies):
         return r
         pass
 
+    
 def get_page(page):
     proxy_status = False
     sleep_time = (1)
